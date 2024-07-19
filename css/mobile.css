@@ -1,0 +1,119 @@
+#home-banner .banner-content {
+    width: 100%; /*pou l pran 50% nan div li ye a*/
+    margin-left: 0px;
+    padding: 0px 15px;
+    text-align: center;
+  }
+
+#home-banner .banner-content h1 {
+    font-size: 30px;
+}
+#home-banner .banner-content P {
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+#home-banner .banner-content a{
+    float: none;
+}
+
+body #text-content {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+body #service-container {
+    grid-template-columns: repeat(1, 1fr);
+ }
+
+ body #blog-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+ body #pied {
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /*Pou endike konbyen kolon grille la ap genyen(4 fwa)*/
+  }
+
+#menu {
+    position: fixed; /*pou l paret menm le map scroll*/
+    height: 100vh;/*pou l pran tout ote ekran*/
+    background: white;
+    width: 70%;
+    left: 0px;/*pou l pa kite espas a goch menm*/
+    top: 0px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    line-height: 35px;/*pou jere espas ant lyen yo*/
+    padding: 10px 10px; /*yon ti espas anndan pou lyen yo*/
+    display: none;
+}
+
+#entete .hoverheader:hover {
+    background: #093e60;
+    color: white;
+    padding: 10px 10px;
+    margin:1px  5px;
+    border-radius: 10px;
+  }
+
+  #lieninscription:hover {
+    background: #093e60 !important;
+    padding: 10px 10px;
+    margin:1px  5px;
+    border-radius: 10px;
+  }
+
+  #entete .active{
+    background: #093e60;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin:1px  5px;
+  }
+
+#menu a {
+    width: 100%; /*poul pran tout espas kote l ye a epi voye sak vin apre l la sou yon lot liy*/
+    float: left;
+}
+
+body #lieninscription {
+    background: white !important; /*!important se pou w ka ba l priyorite sou lot a yo epi fose l pran vale pa l*/
+    color: black !important;
+    margin-left: 0%; /*pou avanse enskripsyon plis a dwat parapo ak lot a yo*/
+}
+
+#btn-menu{
+    float: right;
+    width: 30px;  
+    margin-top: 25px;
+}
+
+#btn-menu div{
+    float: left;
+    width: 100%;
+    height: 3px;
+    background: #093e60;
+    margin-bottom: 2px;
+}
+
+#contact-form {
+    width: 90%;
+    margin-left: 5%; /*pwiske width la gentan 50%, nou ba l 25% pou l ka ekilibre l a goch epi santre form nan*/
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

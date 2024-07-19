@@ -1,0 +1,413 @@
+/*__________________________________Proprietes general_____________________________________________*/
+
+* {
+  box-sizing: border-box; /*pou evite debode, vale ogmante yo ap pran apati de with nou an, san deranje kalkil la*/
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*__________________________________Proprietes en tete_____________________________________________*/
+
+#entete {
+  float: left;
+  width: 100%; /*Pou jere responsiv la*/
+  height: 70px;
+  line-height: 70px; /*pou pemet ke lyen yo santre anwo ak anba*/
+  padding: 0% 2%;
+  background: white;
+  margin-bottom: 5px;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3); /*Pou jere omb div la, rgba pou w ka gen posiblite transparans lan*/
+}
+
+.stab{
+  position: fixed;
+
+}
+
+#menu {
+  float: right;
+}
+
+#logo {
+  float: left;
+  width: 80px;
+}
+
+#menu a {
+  padding: 0px 12px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+#lieninscription {
+  background: #202125 !important; /*!important se pou w ka ba l priyorite sou lot a yo epi fose l pran vale pa l*/
+  color: white !important;
+  padding: 10px 15px !important;
+  border-radius: 10px;
+  margin: 0px 0px 0px 30px; /*pou avanse enskripsyon plis a dwat parapo ak lot a yo*/
+}
+
+#lieninscription:hover {
+  background: #093e60 !important;
+}
+
+#entete .hoverheader:hover {
+  background: #093e60;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+#entete .active{
+  background: #093e60;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+/*__________________________________Proprietes index_____________________________________________*/
+
+#home-banner {
+  margin-top: 75px;
+  float: left;
+  width: 100%;
+  height: 100vh; /*vh ==m % nan auto*/
+  background: url("../images/blog4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.banner-content {
+  width: 50%; /*pou l pran 50% nan div li ye a*/
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.banner-content h1 {
+  color: white;
+  text-transform: uppercase;
+  float: left;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  margin-bottom: 0px;/*pou retire maj ki anba h1 an*/
+}
+
+.banner-content P {
+  color: white;
+  float: left;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.banner-content a{
+  float: left;
+  color: white;
+  border: 1px solid white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.banner-content a:hover{
+  background: white;
+  color: #202125 ;
+
+}
+
+.section-title{
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*__________________________________Proprietes a propos_____________________________________________*/
+#banner {
+  margin-top: 75px;
+  float: left;
+  width: 100%;
+  background-image: url("../images/data.jpg");
+  background-size: cover; /*pemet ke imaj la pran size div la*/
+  background-repeat: no-repeat;
+  background-position: center; /*pou idantifye ki pati li dwe pran sou imaj la*/
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply; /*pou pemet ke imaj la paret pi sonb parapo ak koule la an fonksyon de bg color la epi fe txt la paret pi bel*/
+  padding: 70px 20%;
+  text-align: center;
+}
+
+#banner h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+#banner p {
+  color: white;
+  font-size: 17px;
+}
+
+#text-content {
+  float: left;
+  width: 100%;
+  padding: 50px 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+#text-content img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.7);
+}
+
+#text-content p {
+  text-align: justify;
+}
+
+#text-content h2 {
+  text-align: center;
+}
+
+
+/*__________________________________Proprietes blog______________________________________________________*/
+
+#blog-container {
+  margin-top: 40px;
+  float: left;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 50px 5%;
+}
+
+#blog-container img {
+  width: 100%;
+  float: left;
+  border-radius: 7px;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.7);
+}
+
+#blog-container span {
+  float: left;
+  color: orange;
+  width: 100%;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+#blog-container h2 {
+  float: left;
+  width: 100%;
+  font-size: 20px;
+  text-align: left;
+}
+
+#blog-container p {
+  float: left;
+  width: 100%;
+  font-size: 15px;
+  text-align: left;
+  margin-top: -5px;
+}
+
+#blog-container a {
+  float: left;
+  background-color: #093e60;
+  color: white;
+  padding: 7px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#blog-container a:hover {
+  background-color: #202125;
+}
+
+/*__________________________________Proprietes Nos services_____________________________________________*/
+
+#service-container {
+  margin-top: 30px;
+  width: 100%;
+  float: left;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.service-item {
+  border: 1px solid rgba(0, 0, 0, 0.2); /*pou mete sevis yo nan kaz yo*/
+  border-radius: 10px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.02);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.7);
+}
+
+/*__________________________________Proprietes Contactez-Nous_____________________________________________*/
+
+#banner_form {
+  margin-top: 77px;
+  float: left;
+  width: 100%;
+  background-image: url("../images/contact.jpg");
+  background-size: cover; /*pemet ke imaj la pran size div la*/
+  background-repeat: no-repeat;
+  background-position: center; /*pou idantifye ki pati li dwe pran sou imaj la*/
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply; /*pou pemet ke imaj la paret pi sonb parapo ak koule la an fonksyon de bg color la epi fe txt la paret pi bel*/
+  padding: 75px 20%;
+  text-align: center;
+}
+
+#banner_form h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+#banner_form p {
+  color: white;
+  font-size: 17px;
+}
+
+#contact-form {
+  float: left;
+  width: 50%;
+  margin-left: 25%; /*pwiske width la gentan 50%, nou ba l 25% pou l ka ekilibre l a goch epi santre form nan*/
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+input {
+  width: 100%;
+  float: left;
+  margin: 7px 0px; /*pou mete yon ti espas ant kaz yo*/
+  padding: 15px; /*pou mete yon ti espas ant placeholder epi kaz li ye a*/
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+input:hover {
+  border: 1px solid #0b1e50;
+}
+
+textarea {
+  width: 100%;
+  float: left;
+  margin: 7px 0px; /*pou mete yon ti espas ant kaz yo*/
+  padding: 15px; /*pou mete yon ti espas ant placeholder epi kaz li ye a*/
+  border: 1px solid rgba(0, 0, 0, 0.529);
+  border-radius: 10px;
+  height: 150px;
+  resize: none;
+}
+
+textarea:hover {
+  border: 1px solid #0b1e50;
+}
+
+button {
+  width: 100%;
+  float: left;
+  margin: 7px 0px; /*pou mete yon ti espas ant kaz yo*/
+  padding: 15px; /*pou mete yon ti espas ant placeholder epi kaz li ye a*/
+  background: #093e60;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  background: #202125;
+}
+
+/*__________________________________Proprietes footer_____________________________________________*/
+
+#pied {
+  float: left;
+  width: 100%;
+  background: #093e60;
+  display: grid; /*Pou endike ke pye paj la ap yon grille*/
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /*Pou endike konbyen kolon grille la ap genyen(4 fwa)*/
+  gap: 50px; /*Pou mete espas ant kolon yo*/
+  padding: 50px 5%;
+}
+
+#pied p {
+  color: white;
+}
+
+#pied a {
+  width: 100%;
+  float: left;
+  color: white;
+  text-decoration: none;
+  margin: 5px 0px;
+}
+
+#pied h2 {
+  width: 100%;
+  float: left;
+  color: white;
+}
+
+ion-icon {
+  margin-bottom: -3px;
+}
+
+#pied .log1 {
+  margin-bottom: -5px;
+  width: 40px;
+  height: 20px;
+}
+
+#pied ul {
+  float: left;
+  width: 100%;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#pied li {
+  color: white;
+  float: left;
+  padding: 10px; /*Dimansyon case rezo yo*/
+  background: rgba(255, 255, 255, 0.1);
+  margin: 10px 10px; /*pou mete ti separasyon ki nan mitan case yo*/
+  border-radius: 10px;
+}
+
+#para {
+  text-align: justify;
+  line-height: 33px;
+}
+
+
+
+

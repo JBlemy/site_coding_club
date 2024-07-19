@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactez-Nous</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 760px)"/>
+
+  </head>
+  <body>
+    <div id="entete" class="stab">
+      <a href="index.html"><img src="images/church.jpg" alt="" id="logo" /></a>
+      <div onclick="affichermenu();" id="btn-menu">
+        <div></div>
+
+        <div></div>
+        
+        <div></div>
+      </div>
+      <div id="menu">
+        <a href="index.html" class="hoverheader">Accueil</a>
+        <a href="apropos.html" class="hoverheader">A propos</a>
+        <a href="blog.html" class="hoverheader">Blog</a>
+        <a href="nosservices.html" class="hoverheader">Nos Services</a>
+        <a class="active" href="contact.html" class="hoverheader">Contactez-nous</a>
+        <a href="inscription.html" id="lieninscription">S'inscrire</a>
+      </div>
+    </div>
+
+    <div id="banner_form">
+      <h1>Contactez-nous</h1>
+      <p>
+        Vous avez une question ou vous voulez juste dire bonjour ? Nous
+        aimerions recevoir de vos nouvelles.
+      </p>
+    </div>
+
+    <div id="contact-form">
+      <form action="" method="post">
+        <input
+          type="text"
+          name="nom"
+          placeholder="votre nom"
+          autofocus
+          required
+        />
+
+        <input type="email" name="email" placeholder="Votre email" required />
+
+        <textarea
+          name="message"
+          placeholder="Votre message"
+          required
+        ></textarea>
+
+        <button name="envoyer_message" type="submit">Envoyer</button>
+      </form>
+    </div>
+
+    <div id="pied">
+      <div>
+        <p id="para">
+          Conscients de l'importance du numérique en ce moment, nous mettons à
+          la disposition des passionnés de ce secteur toutes les ressources
+          nécessaires pour démarrer ou continuer à avancer sur leurs projets
+          Tech grâce à nos ateliers de programmation, formations ou autres.
+        </p>
+      </div>
+
+      <div>
+        <h2>Menu</h2>
+        <a href="index.html"
+          ><ion-icon name="arrow-forward-outline"></ion-icon> Accueil</a
+        >
+        <a href="apropos.html"
+          ><ion-icon name="arrow-forward-outline"></ion-icon> Qui sommes nous</a
+        >
+        <a href="blog.html"
+          ><ion-icon name="arrow-forward-outline"></ion-icon> Blog</a
+        >
+        <a href="nosservices.html"
+          ><ion-icon name="arrow-forward-outline"></ion-icon> Nos Services</a
+        >
+        <a href="contact.html"
+          ><ion-icon name="arrow-forward-outline"></ion-icon> Contactez-nous</a
+        >
+        <a href="partenaires.html"
+          ><ion-icon name="arrow-forward-outline"></ion-icon> Nos partenaires</a
+        >
+      </div>
+
+      <div>
+        <h2>Nos Services</h2>
+        <a href="formation.html"
+          ><ion-icon name="arrow-forward-outline"></ion-icon> Formation</a
+        >
+        <a href="atelier.html"
+          ><ion-icon name="arrow-forward-outline"></ion-icon> Atelier</a
+        >
+        <a href="pos.html"
+          ><ion-icon name="arrow-forward-outline"></ion-icon> Systeme
+          informatique</a
+        >
+        <a href="portfolio.html"
+          ><ion-icon name="arrow-forward-outline"></ion-icon> Portfolio</a
+        >
+        <a href="challenge.html"
+          ><ion-icon name="arrow-forward-outline"></ion-icon> Challenge</a
+        >
+      </div>
+
+      <div>
+        <h2>Contactez-nous</h2>
+        <p><ion-icon name="call-outline"></ion-icon> Tel : (509) 3535-9939</p>
+        <p>
+          <a href="mailto:jblemy2002@gmail.com"
+            ><ion-icon name="mail-outline"></ion-icon> Email :
+            jblemy2002@gmail.com</a
+          >
+        </p>
+        <ul>
+          <li>
+            <a href=""
+              ><ion-icon name="logo-facebook" class="log1"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><ion-icon name="logo-instagram" class="log1"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><ion-icon name="logo-twitter" class="log1"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+  <script src="js/script.js"></script>
+  <!--Action se pou endike l ki kote wap voye l fe tretman pou ou-->
+  <!--value pran yon txt pa defo, se sa ki diferansye l de placeholder a-->
+</html>
