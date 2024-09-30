@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscrivez-Nous</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 760px)"/>
+
+  </head>
+  <body>
+    <div id="entete" class="stab">
+      <a href="index.html"><img src="images/church.jpg" alt="" id="logo" /></a>
+      <div onclick="affichermenu();" id="btn-menu">
+        <div></div>
+
+        <div></div>
+        
+        <div></div>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="index.html" class="hoverheader">Accueil</a></li>
+          <li><a href="apropos.html" class="hoverheader">A propos</a>
+          <ul>
+            <li>
+              <a class="hoverheader" href="mission.html">Notre Mission</a>
+            </li>
+            <li>
+              <a class="hoverheader" href="equipe.html">Notre Equipe</a>
+            </li>
+            <li>
+              <a class="hoverheader" href="vision.html">Notre Vision</a>
+            </li>
+            <li>
+              <a class="hoverheader" href="partenaires.html">Nos Partenaires</a>
+            </li>
+          </ul>
+
+          </li>
+          <li><a href="blog.html" class="hoverheader">Blog</a></li>
+          <li><a href="nosservices.html" class="hoverheader">Nos Services</a></li>
+          <li><a href="contact.html" class="hoverheader">Contactez-nous</a></li>
+          <li><a class="active" href="inscription.html" id="lieninscription">S'inscrire</a></li>
+        </ul>
+
+
+        <!-- <a href="index.html" class="hoverheader">Accueil</a>
+        <a href="apropos.html" class="hoverheader">A propos</a>
+        <a href="blog.html" class="hoverheader">Blog</a>
+        <a href="nosservices.html" class="hoverheader">Nos Services</a>
+        <a class="active" href="contact.html" class="hoverheader">Contactez-nous</a>
+        <a href="inscription.html" id="lieninscription">S'inscrire</a> -->
+      </div>
+    </div>
+
+    <div id="banner_form_ins">
+      <h1>Inscrivez-vous</h1>
+      <p>
+        N’hésitez plus et inscrivez-vous dès aujourd’hui pour rester en contact avec nous !
+      </p>
+    </div>
+
+    <div id="ins-form">
+      <form action="" method="post">
+        <input
+          type="text"
+          name="nom"
+          placeholder="votre nom"
+          autofocus
+          required
+        />
+
+        <input
+        type="text"
+        name="prenom"
+        placeholder="Votre prenom"
+        required
+        />
+
+        <input type="email" name="email" placeholder="Votre email" required />
+        
+        <input
+        type="text"
+        name="telephone"
+        placeholder="Votre numero de telephone"
+        required
+        />
+
+        <input
+        type="text"
+        name="adresse"
+        placeholder="Votre adresse"
+        required
+        />
+
+        <textarea
+          name="message"
+          placeholder="Qu'est-ce qui vous a motivé à vous inscrire dans ce club ?"
+          required
+        ></textarea>
+
+        <button name="envoyer_message" type="submit">Envoyer</button>
+      </form>
+    </div>
+
+    <div id="pied">
+      <div>
+        <p id="para">
+          Conscients de l'importance du numérique en ce moment, nous mettons à
+          la disposition des passionnés de ce secteur toutes les ressources
+          nécessaires pour démarrer ou continuer à avancer sur leurs projets
+          Tech grâce à nos ateliers de programmation, formations ou autres.
+        </p>
+      </div>
+
+      <div>
+        <h2>Menu</h2>
+        <a href="index.html"
+          ><ion-icon name="arrow-forward-outline"></ion-icon> Accueil</a
+        >
+        <a href="apropos.html"
+          ><ion-icon name="arrow-forward-outline"></ion-icon> Qui sommes nous</a
+        >
+        <a href="blog.html"
+          ><ion-icon name="arrow-forward-outline"></ion-icon> Blog</a
+        >
+        <a href="nosservices.html"
+          ><ion-icon name="arrow-forward-outline"></ion-icon> Nos Services</a
+        >
+        <a href="contact.html"
+          ><ion-icon name="arrow-forward-outline"></ion-icon> Contactez-nous</a
+        >
+        <a href="partenaires.html"
+          ><ion-icon name="arrow-forward-outline"></ion-icon> Nos partenaires</a
+        >
+      </div>
+
+      <div>
+        <h2>Nos Services</h2>
+        <a href="formation.html"
+          ><ion-icon name="arrow-forward-outline"></ion-icon> Formation</a
+        >
+        <a href="atelier.html"
+          ><ion-icon name="arrow-forward-outline"></ion-icon> Atelier</a
+        >
+        <a href="pos.html"
+          ><ion-icon name="arrow-forward-outline"></ion-icon> Systeme
+          informatique</a
+        >
+        <a href="portfolio.html"
+          ><ion-icon name="arrow-forward-outline"></ion-icon> Portfolio</a
+        >
+        <a href="challenge.html"
+          ><ion-icon name="arrow-forward-outline"></ion-icon> Challenge</a
+        >
+      </div>
+
+      <div>
+        <h2>Contactez-nous</h2>
+        <p><ion-icon name="call-outline"></ion-icon> Tel : (509) 3535-9939</p>
+        <p>
+          <a href="mailto:jblemy2002@gmail.com"
+            ><ion-icon name="mail-outline"></ion-icon> Email :
+            jblemy2002@gmail.com</a
+          >
+        </p>
+        <ul>
+          <li>
+            <a href=""
+              ><ion-icon name="logo-facebook" class="log1"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><ion-icon name="logo-instagram" class="log1"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><ion-icon name="logo-twitter" class="log1"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+  <script src="js/script.js"></script>
+  <!--Action se pou endike l ki kote wap voye l fe tretman pou ou-->
+  <!--value pran yon txt pa defo, se sa ki diferansye l de placeholder a-->
+</html>

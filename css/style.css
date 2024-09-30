@@ -23,7 +23,7 @@ body {
 }
 
 .stab{
-  position: fixed;
+  position: absolute;
 
 }
 
@@ -36,6 +36,7 @@ body {
   width: 80px;
 }
 
+/* 
 #menu a {
   padding: 0px 12px;
   text-decoration: none;
@@ -43,6 +44,46 @@ body {
   font-weight: bold;
   font-size: 15px;
   text-transform: uppercase;
+} */
+
+#menu ul{
+  float: left;
+  display: block;
+  list-style: none;
+}
+
+#menu ul li{
+  float: left;
+}
+
+#menu ul li a {
+  padding: 0px 12px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+#menu ul li ul{
+  position: absolute;
+  width: 170px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  line-height: 40px;
+  display: none;
+  margin-top: -10px;
+  padding: 0px;
+}
+
+#menu ul li ul li{
+  float: left;
+  width: 100%;
+}
+
+#menu ul li:hover ul{
+  display: block;
 }
 
 #lieninscription {
@@ -60,15 +101,17 @@ body {
 #entete .hoverheader:hover {
   background: #093e60;
   color: white;
-  padding: 10px 10px;
+  padding: 10px 8px;
   border-radius: 10px;
 }
 
 #entete .active{
-  background: #093e60;
-  color: white;
   padding: 10px 10px;
   border-radius: 10px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #093e60;;
+  text-underline-offset: 3px;
 }
 
 /*__________________________________Proprietes index_____________________________________________*/
@@ -343,6 +386,89 @@ button:hover {
   background: #202125;
 }
 
+
+/*__________________________________Proprietes Inscrivez-vous_____________________________________________*/
+
+#banner_form_ins {
+  margin-top: 77px;
+  float: left;
+  width: 100%;
+  background-image: url("../images/form1.jpg");
+  background-size: cover; /*pemet ke imaj la pran size div la*/
+  background-repeat: no-repeat;
+  background-position: center; /*pou idantifye ki pati li dwe pran sou imaj la*/
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply; /*pou pemet ke imaj la paret pi sonb parapo ak koule la an fonksyon de bg color la epi fe txt la paret pi bel*/
+  padding: 75px 20%;
+  text-align: center;
+}
+
+#banner_form_ins h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+#banner_form_ins p {
+  color: white;
+  font-size: 17px;
+}
+
+#ins-form {
+  float: left;
+  width: 50%;
+  margin-left: 25%; /*pwiske width la gentan 50%, nou ba l 25% pou l ka ekilibre l a goch epi santre form nan*/
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+input {
+  width: 100%;
+  float: left;
+  margin: 7px 0px; /*pou mete yon ti espas ant kaz yo*/
+  padding: 15px; /*pou mete yon ti espas ant placeholder epi kaz li ye a*/
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+input:hover {
+  border: 1px solid #0b1e50;
+}
+
+input[type="radio"] {
+  margin-right: 5px; /* Espacement entre les boutons radio */
+}
+
+textarea {
+  width: 100%;
+  float: left;
+  margin: 7px 0px; /*pou mete yon ti espas ant kaz yo*/
+  padding: 15px; /*pou mete yon ti espas ant placeholder epi kaz li ye a*/
+  border: 1px solid rgba(0, 0, 0, 0.529);
+  border-radius: 10px;
+  height: 150px;
+  resize: none;
+}
+
+textarea:hover {
+  border: 1px solid #0b1e50;
+}
+
+button {
+  width: 100%;
+  float: left;
+  margin: 7px 0px; /*pou mete yon ti espas ant kaz yo*/
+  padding: 15px; /*pou mete yon ti espas ant placeholder epi kaz li ye a*/
+  background: #093e60;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  background: #202125;
+}
 /*__________________________________Proprietes footer_____________________________________________*/
 
 #pied {
@@ -407,6 +533,15 @@ ion-icon {
   text-align: justify;
   line-height: 33px;
 }
+
+/* .owl-carousel{
+  float: left;
+  width: 100%;
+}
+
+.owl-carousel .item{
+  width: 100%;
+} */
 
 
 

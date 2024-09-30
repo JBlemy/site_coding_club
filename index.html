@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 760px)"/>
     <link rel="stylesheet" href="css/style.css" />
 
@@ -25,12 +29,37 @@
         <div></div>
       </div>
       <div id="menu">
-        <a class="active" href="index.html" class="hoverheader">Accueil</a>
+        <ul>
+          <li><a class="active" href="index.html" class="hoverheader">Accueil</a></li>
+          <li><a href="apropos.html" class="hoverheader">A propos</a>
+          <ul>
+            <li>
+              <a class="hoverheader" href="mission.html">Notre Mission</a>
+            </li>
+            <li>
+              <a class="hoverheader" href="equipe.html">Notre Equipe</a>
+            </li>
+            <li>
+              <a class="hoverheader" href="vision.html">Notre Vision</a>
+            </li>
+            <li>
+              <a class="hoverheader" href="partenaires.html">Nos Partenaires</a>
+            </li>
+          </ul>
+
+          </li>
+          <li><a href="blog.html" class="hoverheader">Blog</a></li>
+          <li><a href="nosservices.html" class="hoverheader">Nos Services</a></li>
+          <li><a href="contact.html" class="hoverheader">Contactez-nous</a></li>
+          <li><a href="inscription.html" id="lieninscription">S'inscrire</a></li>
+        </ul>
+
+        <!-- <a class="active" href="index.html" class="hoverheader">Accueil</a>
         <a href="apropos.html" class="hoverheader">A propos</a>
         <a href="blog.html" class="hoverheader">Blog</a>
         <a href="nosservices.html" class="hoverheader">Nos Services</a>
         <a href="contact.html" class="hoverheader">Contactez-nous</a>
-        <a href="inscription.html" id="lieninscription">S'inscrire</a>
+        <a href="inscription.html" id="lieninscription">S'inscrire</a> -->
       </div>
     </div>
 
@@ -47,25 +76,25 @@
     </div>
 
     <div id="text-content">
-      <div>
+      <div data-aos="fade-right">
         <img src="images/data1.jpg" alt="" />
       </div>
       <div id="infos">
-        <h2>Qui sommes nous</h2>
-        <p>
+        <h2 data-aos="fade-left">Qui sommes nous</h2>
+        <p data-aos="fade-left">
           Nous sommes un espace dynamique d'échange de connaissances,
           rassemblant des passionnés de la programmation pour collaborer sur des
           projets durables et former la prochaine génération de jeunes talents
           dans diverses branches de l'informatique.
         </p>
-        <h2>Notre mission</h2>
-        <p>
+        <h2 data-aos="fade-left">Notre mission</h2>
+        <p data-aos="fade-left">
           Notre mission est de promouvoir l'apprentissage et la pratique de la
           programmation informatique tout en offrant un environnement de soutien
           et de motivation aux jeunes.
         </p>
-        <h2>Ce que nous faisons</h2>
-        <p>
+        <h2 data-aos="fade-left">Ce que nous faisons</h2> <!-- data-aos (aos librairie pour animatio) -->
+        <p data-aos="fade-left">
           Nous organisons des ateliers de codage pratiques visant à stimuler la
           créativité des jeunes et à les aider à se perfectionner. De plus, nous
           mettons en place des concours et des challenges pour permettre à nos
@@ -74,7 +103,7 @@
       </div>
     </div>
 
-    <h1 class="section-title">Nos Services</h1>
+    <h1 class="section-title" data-aos="zoom-in-up">Nos Services</h1>
     <div id="service-container">
       <div class="service-item">
         <img src="images/webdesign.png" alt="">
@@ -89,7 +118,7 @@
       <div class="service-item">
         <img src="images/coding.png" alt="">
         <h2>Coding</h2>
-        <p>
+        <p >
           Nous founissons aux passionnés de technologie toutes les ressources
           nécessaires pour les aider a développer leurs compétences a travers
           nos différnts atelier.
@@ -142,6 +171,21 @@
         <a href="blogitem.html">Voir plus</a>
       </div>
     </div>
+
+    <!-- <div class="owl-carousel owl-theme">
+      <div class="item"><img src="images/prog1.jpg" alt=""></div>
+      <div class="item"><img src="images/prog1.jpg" alt=""></div>
+      <div class="item"><img src="images/prog1.jpg" alt=""></div>
+      <div class="item"><img src="images/prog1.jpg" alt=""></div>
+      <div class="item"><img src="images/prog1.jpg" alt=""></div>
+      <div class="item"><img src="images/prog1.jpg" alt=""></div>
+      <div class="item"><img src="images/prog1.jpg" alt=""></div>
+      <div class="item"><img src="images/prog1.jpg" alt=""></div>
+      <div class="item"><img src="images/prog1.jpg" alt=""></div>
+      <div class="item"><img src="images/prog1.jpg" alt=""></div>
+      <div class="item"><img src="images/prog1.jpg" alt=""></div>
+      <div class="item"><img src="images/prog1.jpg" alt=""></div>
+    </div> -->
 
     <div id="pied">
       <div>
@@ -223,6 +267,36 @@
         </ul>
       </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script>
+      $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      autoplay : true,
+      autoplayTimeout: 5000,
+      nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            // 600:{
+            //     items:3
+            // },
+            // 1000:{
+            //     items:5
+            // }
+        }
+      })
+    </script> -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
