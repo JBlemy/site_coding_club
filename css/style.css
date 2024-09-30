@@ -341,7 +341,7 @@ body {
   margin-bottom: 30px;
 }
 
-input {
+input, select {
   width: 100%;
   float: left;
   margin: 7px 0px; /*pou mete yon ti espas ant kaz yo*/
@@ -350,7 +350,7 @@ input {
   border-radius: 10px;
 }
 
-input:hover {
+input:hover, select:hover {
   border: 1px solid #0b1e50;
 }
 

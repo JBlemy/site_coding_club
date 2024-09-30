@@ -37,7 +37,7 @@ body #service-container {
   }
 
 #menu {
-    position: fixed; /*pou l paret menm le map scroll*/
+    position: absolute; /*pou l paret menm le map scroll*/
     height: 100vh;/*pou l pran tout ote ekran*/
     background: white;
     width: 70%;
@@ -48,6 +48,7 @@ body #service-container {
     padding: 10px 10px; /*yon ti espas anndan pou lyen yo*/
     display: none;
 }
+
 
 #entete .hoverheader:hover {
     background: #093e60;
@@ -65,16 +66,45 @@ body #service-container {
   }
 
   #entete .active{
-    background: #093e60;
-    color: white;
     padding: 10px 10px;
     border-radius: 10px;
-    margin:1px  5px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #093e60;;
+    text-underline-offset: 3px;
   }
 
-#menu a {
-    width: 100%; /*poul pran tout espas kote l ye a epi voye sak vin apre l la sou yon lot liy*/
+/* #menu a {
+    width: 100%; /*poul pran tout espas kote l ye a epi voye sak vin apre l la sou yon lot liy
     float: left;
+}
+
+#menu ul li {
+  width: 100%; /* Chaque élément de menu prend toute la largeur 
+} */
+
+#menu ul li{
+  width: 100%; /* Chaque élément de menu prend toute la largeur */
+  float: left;
+}
+
+#menu ul li a {
+  width: 100%;
+  padding: 0px 12px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+#menu ul li ul li{
+  float: left;
+  width: 100%;
+}
+
+#menu ul li:hover ul{
+  display: block;
 }
 
 body #lieninscription {
