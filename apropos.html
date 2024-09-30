@@ -4,9 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A propos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 760px)"/>
     <link rel="stylesheet" href="css/style.css" />
+
 
   </head>
   <body>
@@ -55,8 +65,8 @@
     </div>
 
     <div id="banner">
-      <h1>Penser, créer, innover, révolutionner</h1>
-      <p>
+      <h1 data-aos="zoom-in-up">Penser, créer, innover, révolutionner</h1>
+      <p data-aos="zoom-in-up">
         Conscients de l'importance du numérique en ce moment, nous mettons à la
         disposition des passionnés de ce secteur toutes les ressources
         nécessaires pour démarrer ou continuer à avancer sur leurs projets Tech
@@ -65,25 +75,25 @@
     </div>
 
     <div id="text-content">
-      <div>
+      <div data-aos="fade-right">
         <img src="images/data1.jpg" alt="" />
       </div>
       <div id="infos">
-        <h2>Qui sommes nous</h2>
-        <p>
+        <h2 data-aos="fade-left">Qui sommes nous</h2>
+        <p data-aos="fade-left">
           Nous sommes un espace dynamique d'échange de connaissances,
           rassemblant des passionnés de la programmation pour collaborer sur des
           projets durables et former la prochaine génération de jeunes talents
           dans diverses branches de l'informatique.
         </p>
-        <h2>Notre mission</h2>
+        <h2 data-aos="fade-left">Notre mission</h2>
         <p>
           Notre mission est de promouvoir l'apprentissage et la pratique de la
           programmation informatique tout en offrant un environnement de soutien
           et de motivation aux jeunes.
-        </p>
-        <h2>Ce que nous faisons</h2>
-        <p>
+        </p data-aos="fade-left">
+        <h2 data-aos="fade-left">Ce que nous faisons</h2>
+        <p data-aos="fade-left">
           Nous organisons des ateliers de codage pratiques visant à stimuler la
           créativité des jeunes et à les aider à se perfectionner. De plus, nous
           mettons en place des concours et des challenges pour permettre à nos
@@ -92,7 +102,7 @@
       </div>
     </div>
 
-    <div id="pied">
+    <div id="pied" data-aos="fade-right">
       <div>
         <p id="para">
           Conscients de l'importance du numérique en ce moment, nous mettons à
@@ -102,7 +112,7 @@
         </p>
       </div>
 
-      <div>
+      <div data-aos="fade-right">
         <h2>Menu</h2>
         <a href="index.html"
           ><ion-icon name="arrow-forward-outline"></ion-icon> Accueil</a
@@ -124,7 +134,7 @@
         >
       </div>
 
-      <div>
+      <div data-aos="fade-left">
         <h2>Nos Services</h2>
         <a href="formation.html"
           ><ion-icon name="arrow-forward-outline"></ion-icon> Formation</a
@@ -144,7 +154,7 @@
         >
       </div>
 
-      <div>
+      <div data-aos="fade-left">
         <h2>Contactez-nous</h2>
         <p><ion-icon name="call-outline"></ion-icon> Tel : (509) 3535-9939</p>
         <p>
@@ -172,6 +182,15 @@
         </ul>
       </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script
       type="module"
