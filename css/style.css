@@ -29,7 +29,6 @@ body {
 
 #menu {
   float: right;
-  z-index: 5000;
 }
 
 #logo {
@@ -68,6 +67,7 @@ body {
 
 #menu ul li ul{
   position: absolute;
+  z-index: 6000;
   width: 170px;
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.1);

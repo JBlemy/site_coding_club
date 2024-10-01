@@ -83,11 +83,26 @@ body #service-container {
   width: 100%; /* Chaque élément de menu prend toute la largeur 
 } */
 
+#menu{
+  position: absolute;
+  z-index: 6000;
+}
+
 #menu ul li{
   width: 100%; /* Chaque élément de menu prend toute la largeur */
   float: left;
 }
 
+#menu ul li ul{
+  width: 170px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  line-height: 40px;
+  display: none;
+  margin-top: -10px;
+  padding: 0px;
+}
 #menu ul li a {
   width: 100%;
   padding: 0px 12px;
