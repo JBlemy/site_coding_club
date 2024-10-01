@@ -29,6 +29,7 @@ body {
 
 #menu {
   float: right;
+  z-index: 5000;
 }
 
 #logo {
