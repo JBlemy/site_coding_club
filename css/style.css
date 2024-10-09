@@ -56,7 +56,7 @@ body {
   float: left;
 }
 
-#menu ul li a {
+#menu ul li a, #menu ul li span {
   padding: 0px 12px;
   text-decoration: none;
   color: black;
@@ -76,6 +76,7 @@ body {
   display: none;
   margin-top: -10px;
   padding: 0px;
+  border-bottom: 5px solid #093e60;
 }
 
 #menu ul li ul li{
@@ -99,10 +100,10 @@ body {
   background: #093e60 !important;
 }
 
-#entete .hoverheader:hover {
+#entete .hoverheader:hover, #menu ul li span:hover {
   background: #093e60;
   color: white;
-  padding: 10px 8px;
+  padding: 7px 8px;
   border-radius: 10px;
 }
 
